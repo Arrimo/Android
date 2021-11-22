@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startMyDay">
+
+        <Button
+            android:id="@+id/kalendar_button"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight=".95"
+            android:fontFamily="@font/tektur_bold"
+            android:text="Kalendar"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            app:cornerRadius="12dp" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1" />
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight=".95"
+            android:fontFamily="@font/tektur_bold"
+            android:text="Einstellungen"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startMyDay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/tektur_bold"
+        android:text="Arbeitstag Starten"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/helloLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tektur_bold"
+        android:text="Anmelden"
+        android:textAlignment="viewStart"
+        android:textColor="@color/mainBlue"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/app_icon_shadow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="25dp"
+        android:background="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helloLabel1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
